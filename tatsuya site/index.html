@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="utf-8">
+    <title>たつ屋</title>
+    
+    <link rel="icon" type="image/png" href="images/title.png">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" href="css/jquery.fullPage.css"> 
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/ionicons.css"> 
+    <link rel="stylesheet" type="text/css" href="css/perfect-scrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.css">
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/perfect-scrollbar.jquery.js"></script>
+    <script type="text/javascript" src="js/lightbox.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+    <script type="text/javascript" src="js/lightslider.js"></script>
+
+    <script>
+        jQuery(document).ready(function($){
+            $('.scrollcontainer').perfectScrollbar()
+        });
+    </script>
+
+    <script>
+        $(function(){
+            $('#fullscreen').fullpage({
+                anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+                menu: '#menu'
+            });
+        });
+    </script>
+
+ <!--    <script>
+     $(document).ready(function() {
+         $(".content-slider").lightSlider({
+             loop:true,
+             keyPress:true
+         });                
+     });
+ </script>
+ 
+ <script type="text/javascript">
+     $(document).ready(function () {
+         var carousel = $("#carousel").waterwheelCarousel({
+         flankingItems: 4,
+         movingToCenter: function ($item) {
+             $('#callback-output').prepend('movingToCenter: ' + $item.attr('id') + '<br/>');
+         },
+         movedToCenter: function ($item) {
+             $('#callback-output').prepend('movedToCenter: ' + $item.attr('id') + '<br/>');
+         },
+         movingFromCenter: function ($item) {
+             $('#callback-output').prepend('movingFromCenter: ' + $item.attr('id') + '<br/>');
+         },
+         movedFromCenter: function ($item) {
+             $('#callback-output').prepend('movedFromCenter: ' + $item.attr('id') + '<br/>');
+         },
+         clickedCenter: function ($item) {
+             $('#callback-output').prepend('clickedCenter: ' + $item.attr('id') + '<br/>');
+         }
+     });
+ 
+     $('#prev').bind('click', function () {
+         carousel.prev();
+         return false
+     });
+ 
+     $('#next').bind('click', function () {
+         carousel.next();
+         return false;
+     });
+ 
+     $('#reload').bind('click', function () {
+         newOptions = eval("(" + $('#newoptions').val() + ")");
+         carousel.reload(newOptions);
+         return false;
+     });
+   });
+ </script>
+  -->
+
+  </head>
+  
+  <body>
+    <div id="allpage">
+      <!-- ------------------------------- Main navigation ----------------------------- -->
+      <nav>
+        <ul id="menu" class="row">       
+          <li data-menuanchor="page1" class="active nav col span-1-of-5"><a href="#page1">ホーム</a></li>
+          
+          <li data-menuanchor="page2" class="nav col span-1-of-5">
+            <a href="#page2" id="drop">コンセプト</a>
+            <ul id="drop-ul">
+              <li class="nav col span-1-of-5"><a href="index.html#page2/1">店内紹介</a></li>
+              <li class="nav col span-1-of-5"><a href="index.html#page2/2">お部屋</a></li>
+              <li class="nav col span-1-of-5"><a href="index.html#page2/3">お湯処</a></li>
+            </ul>
+          </li>
+          <li data-menuanchor="page3" class="nav col span-1-of-5"><a href="#page3">メニュー</a></li>
+          <li data-menuanchor="page4" class="nav col span-1-of-5"><a href="#page4">お問合せ</a></li>
+          <li data-menuanchor="page5" class="nav col span-1-of-5"><a href="#page5">お知らせ</a></li>
+        </ul>       
+      </nav><!-- navigation end -->  
+
+
+
+      <!-- ------------------------------- Full screen ----------------------------- -->
+      <div id="fullscreen">
+
+        <!-- ------------------------------- Full screen - section home ----------------------------- -->
+        <div class="section section-home" id="home">
+          <div id="logo">
+            <img alt="logo" src="images/logo2.png"><br>
+            <div id="btn">
+              <a class="btn btn-full" href="#">料金・予約</a>
+              <a class="btn btn-ghost" href="#">お知らせ</a>
+            </div>
+          </div>
+          <div id="news">
+            <marquee direction="left" scrollamount="5">
+              <a href="#"><i class="ion-star"></i><span><b>2014.6.15</b> 7月7日～9日 七夕祭が行われます～～～</span></a>
+              <a href="#"><i class="ion-star"></i><span><b>2014.6.4</b>　雑誌「日本の名湯」で紹介されました～～～</span></a>
+              <a href="#"><i class="ion-star"></i><span><b>2014.5.31</b>　お部屋から、無線LANによるネット接続が可能になりました～～～</span></a>
+              <a href="#"><i class="ion-star"></i><span><b>2014.5.20</b>　6月1日より遊覧船の運行が始まります～～～</span></a>
+            </marquee>
+          </div>
+        </div><!-- section-home end -->
+
+        
+
+        <!-- ------------------------------- Full screen - section content ----------------------------- -->
+        <div class="section section-content" id="content">
+          <div class="fp-controlArrow fp-prev"><img src="images/prev.png"></div>
+
+            <div class="slide slide1 row" id="content1">
+              <div class="left col span-2-of-5">
+                <div class="lt">
+                  <div class="title">
+                    <div>コンセプト</div>
+                  </div>
+                </div>
+                <div class="lb">
+                  lb
+                </div>
+              </div>
+
+              <div class="right col span-3-of-5">
+                r
+              </div>
+            </div>
+
+
+            <div class="slide slide2" id="content2">              
+              <div class="left col span-2-of-5">
+                <div class="lt">
+                  <div class="title">
+                    <div>店内紹介</div>
+                  </div>
+                </div>
+                <div class="lb">
+                  lb
+                </div>
+              </div>
+
+              <div class="right col span-3-of-5">
+                r
+              </div>
+            </div>
+
+
+            <div class="slide slide3" id="content3">              
+              <div class="left col span-2-of-5">
+                <div class="lt">
+                  <div class="title">
+                    <div>お部屋</div>
+                  </div>
+                </div>
+                <div class="lb">
+                  lb
+                </div>
+              </div>
+
+              <div class="right col span-3-of-5">
+                r
+              </div>
+            </div>
+
+
+            <div class="slide slide4" id="content4">              
+              <div class="left col span-2-of-5">
+                <div class="lt">
+                  <div class="title">
+                    <div>お湯処</div>
+                  </div>
+                </div>
+                <div class="lb">
+                  lb
+                </div>
+              </div>
+
+              <div class="right col span-3-of-5">
+                r
+              </div>
+            </div>
+
+          <div class="fp-controlArrow fp-next"><img src="images/next.png"></div>
+        </div><!-- section-content end -->
+
+
+
+        <!-- ------------------------------- Full screen - section food ----------------------------- -->
+        <div class="section section-food" id="food">
+
+        </div><!-- section-food end -->
+
+
+
+        <!-- ------------------------------- Full screen - section access ----------------------------- -->
+        <div class="section section-access" id="access">
+
+        </div><!-- section-access end -->
+
+
+
+        <!-- ------------------------------- Full screen - section notice ----------------------------- -->
+        <div class="section section-notice" id="notice">
+
+        </div><!-- section-notice end -->
+
+
+
+      </div><!-- fullscreen end -->
+    </div> <!-- allpage end -->
+
+
+
+    <!-- ------------------------------- Footer ----------------------------- -->
+    <div class="footer">
+      <div class="row">
+        <div class="info col span-2-of-5">
+          <p>住所：石川県○○市××町△△475-13</p>
+          <p>Tel：0767-12-3456</p>
+          <p>Fax：0767-12-6789</p>
+          <p>Mail：tatsuya@hotel.com</p>
+        </div>
+        <div class="social-links col span-3-of-5">
+          <ul>
+            <li><a href="https://www.facebook.com/"><i class="ion-social-facebook"></i></a></li>
+            <li><a href="https://twitter.com/"><i class="ion-social-twitter"></i></a></li>
+            <li><a href="https://plus.google.com/"><i class="ion-social-googleplus"></i></a></li>            
+          </ul>
+        </div>
+        <div class="copyright col span-3-of-5">
+          <p>&copy; tatsuya 2016</p>
+        </div>
+      </div>
+      
+    </div> <!-- footer end -->
+
+  </body>
+
+</html>
