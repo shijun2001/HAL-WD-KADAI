@@ -73,6 +73,7 @@ header {
 	background-attachment: fixed;
 	text-align: center;
 	font-family: "HG行書体";
+	overflow: hidden;
 }
 
 nav {
@@ -134,7 +135,7 @@ nav {
 #logo {
 	position: absolute;
     top: 22%;
-    left: 40%;
+    left: 38%;
 }
 
 .overimg{
@@ -271,31 +272,21 @@ nav {
 }
 
 .info-box {
-	width: 80%;
+	width: 85%;
 	height: 82vh;
-	margin-left: 10%;
-	float: left;
+	margin-left: 5%;
 	padding-top: 2px;
 }
 
 .info-left {
 	float: left;
 	width: 25%;
+	height: 100%;
 	text-align: center;
 }
 
-/* .info-lt {
-	width: 120px;
-	height: 110px;
-	background: url(../images/logo-out.png) no-repeat;
-	background-size: cover;
-	background-position: center;
-	margin: 0 0 20px 80px;
-	padding-top: 15px;
-} */
-
 .info-lb {
-	width: 280px;
+	width: 300px;
 	height: 55vh;
 	margin: 0 auto;
 	text-align: center;
@@ -308,7 +299,7 @@ nav {
 }
 
 .info-lb p {
-	font-size: 15px;
+	font-size: 0.9em;
 	letter-spacing: 2.5px;
 	line-height: 1.7em;
 	text-align: center;
@@ -403,99 +394,6 @@ nav {
 	height: 20px;
 	background-color: rgba(0,0,0,0.5);
 	padding: 5px 0;
-}
-
-@media screen and (max-width: 1000px) {
-	.info-right {
-		float: right;
-		width: 60vh;
-		height: 70vh;
-		background-image: url(../images/bg3.jpg);
-		padding-top: 2vh;
-		padding-left: 3vh;
-	}
-
-	.info-image {
-		float: left;
-		opacity: 0.9;
-		-webkit-transform: scale(1);
-	    -ms-transform: scale(1);
-	    transform: scale(1);
-	    transition: all 0.5s;
-	}
-
-	#info-image1 {
-		width: 57vh;
-		height: 53vh;
-		background: url(../images/intro0.jpg) no-repeat;
-		background-size: 100%;
-	}
-
-	#info-image2 {
-		width: 19vh;
-		height: 25vh;
-		background: url(../images/intro1.jpg) no-repeat;
-		background-size: 100%;
-	}
-
-	#info-image3 {
-		width: 19vh;
-		height: 25vh;
-		background: url(../images/intro2.jpg) no-repeat;
-		background-size: 100%;
-	}
-
-	#info-image4 {
-		width: 19vh;
-		height: 25vh;
-		background: url(../images/intro3.jpg) no-repeat;
-		background-size: 100%;
-	}
-
-	#info-image1:hover {
-		opacity: 1;
-	}
-
-	#info-image2:hover,
-	#info-image3:hover,
-	#info-image4:hover {
-		opacity: 1;
-		box-shadow: 0px 1px 1px #fff;
-	    -webkit-transform: scale(1.01);
-	    -ms-transform: scale(1.01);
-	    transform: scale(1.01);
-	}
-
-	.info-text {
-		width: 35%;
-		height: 20px;
-		position: absolute;
-		bottom: 3%;
-		left: 0;
-		padding-bottom: 12px;
-		padding-left: 5px;
-		border-bottom: 1px solid #fff;
-		font-size: 30px;
-		font-weight: normal;
-		text-align: center;
-		letter-spacing: 3px;
-	}
-
-	#info-text2,
-	#info-text3,
-	#info-text4 {
-		height: 12px;
-		bottom: 50%;
-		font-size: 12px;		
-	}
-
-	.info-ft {
-		float: left;
-		width: 100%;
-		height: 20px;
-		background-color: rgba(0,0,0,0.5);
-		padding: 8px 0 ;
-	}
 }
 
 
@@ -1037,6 +935,7 @@ nav {
 /* ---------------------------- */
 #content5 {
 	background-image: url(../images/bg.jpg);
+	background-attachment: fixed;
 	font-family: "HG正楷書体-PRO";
 	height: 100vh;
 	padding: 0;
@@ -1236,3 +1135,404 @@ nav {
 .access-ft span {
 	font-size: 14px;
 }
+
+
+
+@media screen and (max-width: 1200px) {
+	.info-right {
+		float: right;
+		width: 60vh;
+		height: 70vh;
+	}
+
+	#info-image1 {
+		width: 57vh;
+		height: 53vh;		
+	}
+
+	#info-image2 {
+		width: 19vh;
+		height: 25vh;
+	}
+
+	#info-image3 {
+		width: 19vh;
+		height: 25vh;
+	}
+
+	#info-image4 {
+		width: 19vh;
+		height: 25vh;
+	}
+
+	.info-text {
+		width: 35%;
+		height: 20px;
+		position: absolute;
+		bottom: 3%;
+		left: 0;
+		padding-bottom: 12px;
+		padding-left: 5px;
+		border-bottom: 1px solid #fff;
+		font-size: 30px;
+		font-weight: normal;
+		text-align: center;
+		letter-spacing: 3px;
+	}
+
+	#info-text2,
+	#info-text3,
+	#info-text4 {
+		height: 12px;
+		bottom: 50%;
+		font-size: 12px;		
+	}
+
+	.info-ft {
+		width: 100%;
+		height: 20px;
+		padding: 8px 0 ;
+	}
+}
+
+
+
+
+@media screen and (min-height: 670px) {
+	#logo {
+	    top: 27%;
+	    left: 38%;
+	}
+
+	.overimg,.overimg img{		
+		width: 200px;		
+	}
+
+	.light{
+		left: -300px;
+		height: 395px;
+	}
+
+	.overimg:hover .light{
+		left:280px;/* 根据图像宽度自行修改 */
+		transition: all 0.8s;
+	}
+
+	.info-box {
+		height: 83vh;
+		margin-left: 10%
+	}
+
+	.info-left {
+		width: 35%;
+		margin-right: 70px;
+	}
+
+	.info-lb {
+		width: 360px;		
+	}
+
+	.info-lb h2 {
+		font-size: 55px;
+		margin-bottom: 30px;
+	}
+
+	.info-lb p {
+		font-size: 1em;
+		line-height: 1.7em;
+	}
+
+	.info-right {
+		float: left;
+		width: 60vh;
+		height: 70vh;
+	}
+
+	#info-image1 {
+		width: 57vh;
+		height: 53vh;
+	}
+
+	#info-image2 {
+		width: 19vh;
+		height: 25vh;
+	}
+
+	#info-image3 {
+		width: 19vh;
+		height: 25vh;
+	}
+
+	#info-image4 {
+		width: 19vh;
+		height: 25vh;
+	}
+
+	#info-text2,
+	#info-text3,
+	#info-text4 {
+		height: 12px;
+		bottom: 50%;
+		font-size: 12px;		
+	}
+
+	.info-ft {
+		padding: 9px 0 6px;
+	}
+
+	.room-ft {
+		bottom: 3.5%;
+	}
+
+	.bath-left,
+	.bath-right {
+		height: 75%;		
+	}
+
+	.bath-name {
+		margin: 30px 0;
+	}
+
+	.spa {
+		font-size: 35px;
+		letter-spacing: 10px;
+		margin-bottom: 15px;
+	}
+
+	.spa-spe {
+		border-top: 1px solid #000;
+		padding: 5px 0;
+		font-size: 17px;
+		font-family: "HG正楷書体-PRO";
+	}
+
+	.bath-bottom {
+		float: left;
+		text-align: left;
+		width: 100%;
+		height: 20px;
+		border-top: 1px solid #000;
+		font-size: 15px;
+		color: #000;
+		padding: 5px 0;
+		margin-top: 35px;
+		line-height: 1.3em;
+		font-family: "HG正楷書体-PRO";
+	}
+
+}
+
+@media screen and (min-height: 770px) {
+	.info-lb p {
+		font-size: 1.2em;
+		line-height: 1.7em;
+	}
+
+	.info-lb h2 {
+		font-size: 55px;
+		margin-bottom: 50px;
+	}
+
+	.room-name {
+		width: 100px;
+		margin: 0 auto;
+		margin-top: 40vh;
+	}
+
+	.kanji {
+		width: 60px;
+		font-size: 60px;
+	}
+
+	.bath-left,
+	.bath-right {
+		height: 80%;		
+	}
+
+	.bath-box img {
+		width: 320px;
+		margin-top: 20px;
+	}
+
+	.bath-name {
+		margin: 30px 0;
+	}
+
+	.spa {
+		font-size: 45px;
+		letter-spacing: 10px;
+		margin-bottom: 15px;
+	}
+
+	.spa-spe {
+		font-size: 17px;
+		line-height: 1.6em;
+	}
+
+	.bath-bottom {		
+		font-size: 17px;
+		margin-top: 30px;
+		line-height: 1.5em;
+	}
+
+	.bath-ft {
+		position: relative;
+		bottom: 0;
+		width: 100%;
+		height: 4%;
+		background-color: rgba(0,0,0,0.5);
+		padding: 10px 0 0 0;
+	}
+
+	.menu {
+		width: 250px;
+		padding: 20px;
+		position: relative;
+		top: 50px;
+	}
+
+	.menu .set {
+		width: 200px;
+		min-height: 70px;
+		margin-bottom: 60px;
+	}
+
+	.menu .set:hover {
+		border-left: 8px solid rgba(255,255,0,0.7);
+		width: 192px;
+		transform: scale(1.1,1.1);
+	}
+
+	.page {
+		font-size: 18px;
+	}
+
+	.page-box {
+		background-color: rgba(0,0,0,0.8);
+		border: 1px solid #000;
+		width: 102%;
+		height: 75vh;
+	}
+
+	.page-left-t {
+		padding: 10px;
+		font-size: 16px;
+		line-height: 2em;
+		width: 120%;
+	}
+
+	.page-lb {
+		margin-bottom: 25px;
+	}
+
+	.page-lb1 {
+		float: left;
+		width: 33%;
+		margin-bottom: 25px;
+	}
+
+	.page-lb2 {
+		float: left;
+		width: 33%;
+		margin-bottom: 25px;
+	}
+
+	.page-lb3 {
+		float: left;
+		width: 33%;
+		margin-bottom: 25px;
+	}
+
+	.page-lb4 {
+		float: left;
+		width: 33%;
+		margin-bottom: 25px;
+	}
+
+	.page-lb5 {
+		float: left;
+		width: 33%;
+		margin-bottom: 25px;
+	}
+
+	.page-lb6 {
+		float: left;
+		width: 33%;
+		margin-bottom: 25px;
+	}
+
+	.page-lb7 {
+		float: left;
+		width: 33%;
+		margin-bottom: 25px;
+	}
+
+	.page-lb8 {
+		float: left;
+		width: 33%;
+		margin-bottom: 25px;
+	}
+
+
+	.page-right {
+		position: relative;
+		top: 50%;
+		height: 50%;
+	}
+
+	.container span#close {
+		position: absolute;
+		bottom: 60px;
+		left: 568px;
+	}
+
+	.food-ft {
+		position: relative;
+		bottom: 0;
+		width: 100%;
+		height: 4%;
+		background-color: rgba(0,0,0,0.5);
+		padding: 12px 0 0 0;
+	}
+
+	.access-left, .access-right, {
+		line-height: 1.8em;
+	}
+
+	.access-lb, .access-lb p, .access-lb span {
+		line-height: 1.8em;
+		font-size: 14px;
+	}
+
+
+	.access-right label {
+		font-weight: bold;
+		font-size: 16px;
+		margin-top: 20px;
+	}
+
+	.access-right input {
+		height: 30px;
+	}
+
+	.access-box table tr {
+		height: 40px;
+	}
+
+	.access-ft {
+		position: relative;
+		bottom: 0;
+		width: 100%;
+		height: 3.5%;
+		background-color: rgba(0,0,0,0.5);		
+		padding: 10px 0 0 0;
+	}
+
+	#toTop{
+	    bottom: 45px;
+	}
+
+}
+
+
+
